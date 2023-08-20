@@ -13,7 +13,6 @@ Before you begin the configurations for `blockchain-broadcast-backend` and `bloc
 
 2. **Test Wallet**: The setup already includes a test wallet named `payment.addr`. Hence, there's no need to create a new test wallet. However, always be cautious and avoid performing any transactions involving real funds with test wallets.
 
-###### Blockchain Broadcast - Cardano Blockchain
 
 ### Configuration for `blockchain-broadcast-frontend`
 
