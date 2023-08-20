@@ -28,12 +28,12 @@ node v16.10 (some later versions of node do not work with netlify dev)
 
 ## Running Locally
 
-First, make sure the backend is already running locally and a server connection has been established successfully. For instructions on how to run the backend locally please go to [blockchain-broadcast-backend](https://github.com/Rushi/blockchain-broadcast-backend).
+First, make sure the backend is already running locally and a server connection has been established successfully. For instructions on how to run the backend locally please go to [blockchain-broadcast-backend](https://github.com/RushiChavan-dev/blockchain-broadcast-backend).
 
 Clone the repo
 
 ```
-git clone https://github.com/Rushi/blockchain-broadcast-frontend.git
+git clone https://github.com/RushiChavan-dev/Blockchain-Broadcast-Cardano.git
 ```
 
 Change directory
