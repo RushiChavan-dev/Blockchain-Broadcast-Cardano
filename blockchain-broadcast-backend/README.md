@@ -1,30 +1,26 @@
 # blockchain Broadcast
 
-Blockchain Broadcast is an online web application bookstore built using the MERN stack.
+Blockchain Broadcast is an online Dapp application bookstore built using the MERN stack and Cardano.
 
-This is the backend for the Blockchain Broadcast web app developed as a group project for our Spring 2021 CEN 4010 Software Engineering course.
+This is the backend for the Blockchain Broadcast web app developed as a group project for our Summer 2023 T475 Blockchain Developement course.
 
 ## Development Team
 Below are the developers of this project and their assigned features.
-- [Andrew Andersen](https://github.com/pandamon99) (Book Browsing and Sorting)
-- [Azhar Ali](https://github.com/azhareus) (Book Rating and Commenting)
-- [Celeste Amengual](https://github.com/celesteamen) (Wishlist Management)
-- [Jonathan Attias Khoudari](https://github.com/jattias96) (Book Details)
-- [Leanet Alfonso Azcona](https://github.com/leanetalfonso) (Shopping Cart)
-- [William Aranzabal](https://github.com/cab-aranw) (Profile Management)
+- [Rutuja Dalvi](https://www.linkedin.com/in/rutuja-dalvi-developer/)
+
 
 ## Running Locally
 
 Clone the repo
 
 ```
-git clone https://github.com/LeanetAlfonso/geek-text-backend.git
+git clone https://github.com/Rushi/blockchain-blockcast-backend.git
 ```
 
 Change directory
 
 ```
-cd geek-text-backend
+cd blockchain-broadcast-backend
 ```
 
 Install dependencies
