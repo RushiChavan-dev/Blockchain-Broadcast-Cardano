@@ -14,7 +14,7 @@ Below are the developers of this project and their assigned features.
 Clone the repo
 
 ```
-git clone https://github.com/Rushi/blockchain-blockcast-backend.git
+git clone https://github.com/RushiChavan-dev/Blockchain-Broadcast-Cardano.git
 ```
 
 Change directory
