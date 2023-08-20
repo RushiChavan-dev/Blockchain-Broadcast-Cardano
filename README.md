@@ -1,4 +1,4 @@
-###  Blockchain Broadcast - Cardano Blockchain
+#  Blockchain Broadcast - Cardano Blockchain
 
 ## GitHub Documentation: Configuration for `blockchain-broadcast-backend` and `blockchain-broadcast-frontend`
 
