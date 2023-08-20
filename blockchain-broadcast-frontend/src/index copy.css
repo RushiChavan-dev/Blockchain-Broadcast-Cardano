@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+	--primary-color: #7a9ea7;
+	--medium-dark-primary-color: #5a747a;
+	--darker-primary-color: #5a747a;
+	--warm-color: #f3d8c3;
+	--secondary-color: #dce4e7;
+	--tertiary-color: #333e48;
+	--info-color: #117aff;
+	--success-color: #4bd964;
+	--danger-color: #ee1d00;
+	--light-color: #efefef;
+	--background-color: #fff;
+	--yellow-color: #a78e4b;
+	--dark-color: #4d636a;
+	--gray-color: #7a7c7e;
+	--dark-gray-color: #535456;
+	--light-gray-color: #b7bbbf;
+	--border-color: #ddd;
+	--disabled-color: #aaa9a9;
+	--new-color: #6d888eb0;
+	--router-link-color: #4a4a4d;
+}
+#root {
+	height: 100vh;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+
+body {
+	/* min-height: 100%; */
+	height: 100%;
+	background: var(--background-color);
+	color: var(--tertiary-color);
+	line-height: 1.6;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: var(--tertiary-color);
+	text-decoration: none;
+}
+.blur {
+	height: 100%;
+	width: 100%;
+	z-index: 4;
+	background: rgba(255, 255, 255, 0.094);
+	backdrop-filter: blur(2px);
+	position: absolute;
+}
+.Router_Link {
+	text-decoration: none;
+	color: var(--router-link-color);
+	align-items: center;
+	display: flex;
+	column-gap: 3px;
+}
+
+.centered_header {
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+	margin: 2rem;
+}
+
+.screen {
+	margin-top: 4rem;
+	/* margin-bottom: 10rem;
+	padding-bottom: 6rem; */
+}
+
+.screen-h-padding {
+	margin-left: 8rem;
+	margin-right: 8rem;
+}
+
+.screen i:hover {
+	color: var(--dark-gray-color);
+	cursor: pointer;
+}
+.screen i[disabled] {
+	pointer-events: none;
+	color: var(--disabled-color);
+}
+hr {
+	border: none;
+	/* top    */
+	border-top: 1px solid #ccc;
+	/* middle */
+	background-color: #ddd;
+	color: #ddd;
+	height: 1px;
+	*height: 2px; /* IE6+7 need the total height */
+}
+
+.customer_container {
+	/* max-width: 1440px; */
+	width: 100%;
+	margin-top: 3rem;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.btn {
+	font-family: 'Open Sans', sans-serif;
+	min-width: 6.5rem;
+	font-weight: 700;
+	font-size: 0.8rem;
+	transition: all 0.3s ease-out;
+	border: none;
+	cursor: pointer;
+	outline-width: 0;
+	border-radius: 0px !important;
+	padding: 5px;
+	text-align: center;
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+	color: var(--light-color);
+	border: 1px solid var(--primary-color);
+}
+
+.btn-block {
+	width: 100%;
+	display: block;
+	/* margin: 13px 0; */
+}
+
+.btn-light {
+	background: var(--background-color);
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+}
+.btn-dark {
+	background-color: var(--dark-color);
+	border: 1px solid var(--dark-color);
+	color: var(--light-color);
+}
+
+.btn-text {
+	font-size: 13px !important;
+	background: transparent;
+	border: none;
+	color: var(--medium-dark-primary-color);
+	cursor: pointer;
+	display: block;
+	margin: 0rem 0rem 1rem 0rem;
+}
+
+.btn-text:hover {
+	color: var(--darker-primary-color);
+}
+
+.btn-full {
+	width: 100%;
+	display: block;
+	margin-top: 5px;
+}
+
+.btn-primary:hover {
+	background-color: var(--medium-dark-primary-color);
+	border-color: var(--medium-dark-primary-color);
+}
+
+.btn-light:hover {
+	background-color: var(--dark-color);
+	border: 1px solid var(--dark-color);
+	color: var(--light-color);
+}
+.btn-dark:hover {
+	background-color: var(--darker-primary-color);
+	border: 1px solid var(--darker-primary-color);
+	color: var(--light-color);
+}
+
+.rec-arrow {
+	background-color: rgba(var(--tertiary-color), 0.5) !important;
+}
+
+.rec-dot_active {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	box-shadow: 0 0 1px 3px var(--tertiary-color) !important;
+}
+
+.cart_summary {
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	height: 250px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+/*Place the text Welcome User on the right side*/
+.dashboard-divider {
+	display: flex;
+	margin-top: 3rem;
+}
+
+@media (max-width: 1250px) {
+	.screen-h-padding {
+		margin-left: 5rem;
+		margin-right: 5rem;
+	}
+}
+
+@media (max-width: 1150px) {
+	.screen-h-padding {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+}
+@media (max-width: 1070px) {
+	.screen-h-padding {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+html,
+body {
+	height: 100% !important;
+	margin: 0 !important;
+
+	min-height: 100vh;
+}
+
+html {
+	height: 100vh;
+}

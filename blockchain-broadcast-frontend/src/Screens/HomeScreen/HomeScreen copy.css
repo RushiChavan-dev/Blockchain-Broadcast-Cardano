@@ -1,0 +1,220 @@
+#home {
+	display: flex;
+	flex-flow: column;
+	/* margin-top: 42px; */
+	padding-top: 42px;
+}
+
+#fixed-height-1 {
+	height: 96px;
+	margin-bottom: 4px;
+	background-color: var(--new-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#fixed-height-2 {
+	height: 46px;
+	margin-bottom: 4px;
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	font-weight: 600;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+}
+
+#remaining-height {
+	--this-vh2: calc(var(--my-vh, 1vh) * 100);
+	height: calc(
+		100vh - (185px + 50px + 100px + 42px)
+	); /* Fallback for browsers that do not support Custom Properties */
+	height: calc(var(--this-vh2) - (185px + 50px + 100px + 42px));
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	justify-self: center;
+	cursor: pointer;
+	background-color: var(--secondary-color);
+}
+
+#bottom-height {
+	background-color: var(--background-color);
+	position: fixed;
+	height: 185px;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+#fixed-height-1 p {
+	color: var(--background-color) !important;
+	font-weight: 600;
+	text-align: center;
+	padding: 0rem 1rem;
+	font-size: 14px;
+}
+
+#fixed-height-2 p,
+#remaining-height h3 {
+	padding: 0rem 1rem;
+}
+
+.banner-icon {
+	font-size: 80px;
+}
+.banner-icon img {
+	height: 4rem;
+	width: auto;
+	align-self: center;
+}
+
+.banner-icon p {
+	font-size: 14px !important;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.banner-text-header {
+	color: var(--tertiary-color);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.banner-items {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--tertiary-color);
+}
+
+.banner-item {
+	display: block;
+	margin: 0rem 4rem 0rem 4rem;
+	justify-content: center;
+	align-items: center;
+	color: var(--tertiary-color);
+}
+
+.banner-item:hover {
+	text-decoration: underline;
+}
+
+.banner-item a {
+	color: var(--tertiary-color);
+}
+
+.banner-button {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.btn:active {
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+	transform: translateY(-1px);
+}
+
+@media (max-width: 780px) {
+	.banner-item {
+		margin: 0rem 1rem;
+	}
+
+	.banner-icon {
+		font-size: 55px;
+	}
+	.banner-icon p {
+		font-size: 10px !important;
+	}
+	.banner-icon img {
+		height: 3rem;
+	}
+
+	#remaining-height {
+		--this-vh: calc(var(--my-vh, 1vh) * 100);
+		height: calc(
+			100vh - (140px + 50px + 100px + 42px)
+		); /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--this-vh) - (140px + 50px + 100px + 42px));
+	}
+
+	#bottom-height {
+		height: 140px;
+	}
+	#bottom-height .carousel-item {
+		padding-bottom: 3rem;
+		padding-top: 0.5rem;
+	}
+}
+
+@media (max-width: 350px) {
+	.banner-item {
+		margin: 0rem 0.8rem;
+	}
+	.banner-icon {
+		font-size: 40px;
+	}
+	.banner-icon p {
+		font-size: 10px !important;
+	}
+	.banner-icon img {
+		height: 2rem;
+	}
+
+	#remaining-height {
+		--this-vh: calc(var(--my-vh, 1vh) * 100);
+		height: calc(
+			100vh - (100px + 50px + 100px + 42px)
+		); /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--this-vh) - (100px + 50px + 100px + 42px));
+	}
+
+	#bottom-height {
+		height: 100px;
+	}
+}
+
+@media (max-height: 480px) {
+	#remaining-height {
+		--this-vh: calc(var(--my-vh, 1vh) * 100);
+		height: calc(
+			100vh - (95px + 50px + 100px + 42px)
+		); /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--this-vh) - (95px + 50px + 100px + 42px));
+	}
+
+	#bottom-height {
+		height: 95px;
+	}
+}
+
+@media (max-height: 460px) {
+	#fixed-height-1 {
+		height: 36px;
+		margin-bottom: 4px;
+	}
+
+	#fixed-height-2 {
+		height: 36px;
+		margin-bottom: 4px;
+		font-size: 14px;
+	}
+
+	#remaining-height {
+		--this-vh: calc(var(--my-vh, 1vh) * 100);
+		height: calc(
+			100vh - (95px + 40px + 40px + 42px)
+		); /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--this-vh) - (95px + 40px + 40px + 42px));
+	}
+
+	#bottom-height {
+		height: 95px;
+	}
+}

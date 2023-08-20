@@ -1,0 +1,36 @@
+.menu-option {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin: 1rem 0rem;
+	font-size: 11px;
+}
+
+.menu-option:focus,
+.menu-option:active,
+.popup-content:focus,
+.popup-content:active {
+	outline: none;
+}
+
+.menu-option:hover {
+	text-decoration: underline;
+}
+
+.menu-text {
+	margin-left: 0.5rem;
+	font-weight: 400;
+}
+
+.popup-content {
+	margin-top: 10px;
+	border: 1px solid var(--router-link-color);
+	width: fit-content;
+	z-index: 1004 !important;
+	padding: 0rem 1rem;
+	background-color: var(--background-color);
+}
+
+.drop-down-menu a {
+	color: var(--tertiary-color) !important;
+}

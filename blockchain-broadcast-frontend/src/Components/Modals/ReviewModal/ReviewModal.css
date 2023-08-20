@@ -1,0 +1,17 @@
+.review-modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #0000008f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1004;
+}
+
+.review-modal-body {
+	background-color: var(--background-color);
+	padding: 0px 30px;
+}

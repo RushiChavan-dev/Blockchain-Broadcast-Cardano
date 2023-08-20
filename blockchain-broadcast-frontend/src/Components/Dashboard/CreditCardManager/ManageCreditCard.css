@@ -1,0 +1,223 @@
+.personal-info-update-form {
+	text-align: left;
+}
+
+.profile-form {
+	min-width: 40rem;
+	margin-left: 2rem;
+}
+
+.sidebar {
+	padding-top: 0.5rem;
+}
+
+.profile-form input {
+	width: 100%;
+}
+
+.profile-form .col-1-2 {
+	padding: 3.2rem 1rem !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+#title {
+	text-align: center;
+}
+
+#employee {
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+	text-align: center;
+	justify-content: center;
+}
+
+#employee td,
+#employee th {
+	border: 1px solid #ddd;
+	padding: 12px;
+}
+
+#employee tr:hover {
+	background-color: rgb(243, 242, 242);
+}
+
+#employee th {
+	padding: 10px;
+	text-align: center;
+	background-color: var(--primary-color);
+	color: white;
+}
+
+.divTable {
+	display: table;
+	width: 100%;
+}
+
+.divRow {
+	display: table-row;
+	width: auto;
+	padding: 0.5rem 0rem;
+}
+
+.divCell {
+	float: left; /*fix for  buggy browsers*/
+	display: table-column;
+	width: 100px;
+	width: inherit;
+	padding: 10px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+
+.table-content {
+	display: flex;
+}
+
+.inLine {
+	display: flex;
+	column-gap: 8px;
+	align-items: center;
+}
+
+.credit-card-compressed {
+	/* display: flex;
+	column-gap: 10rem; */
+	align-items: center;
+
+	padding: 0.5rem 0rem;
+
+	display: grid;
+	width: 100%;
+	height: fit-content;
+	grid-template-columns: 6fr 1fr;
+	gap: 4rem;
+}
+
+.inLine b {
+	font-size: 14px;
+}
+.inLine p {
+	font-size: 14px;
+	margin-bottom: 0rem;
+}
+
+.operation {
+	cursor: pointer;
+}
+
+.operation:hover {
+	color: var(--primary-color);
+}
+
+.inline-buttons {
+	display: flex;
+	column-gap: 2rem;
+	text-align: right;
+	/* font-size: 16px !important; */
+	font-size: 27px;
+}
+
+@media (max-width: 1170px) {
+	.inLine b {
+		font-size: 12px;
+	}
+	.inLine p {
+		font-size: 12px;
+	}
+	.profile-form {
+		min-width: 30rem;
+		margin-left: 2rem;
+	}
+	.sidebar-text {
+		font-size: 12px;
+	}
+	.account-menu-option {
+		font-size: 14px;
+	}
+	.account-menu-option h4 {
+		font-size: 10px !important;
+	}
+
+	.profile-form .column-1-2 {
+		margin: 0rem !important;
+		padding: 0rem !important;
+	}
+	.profile-form .col-1-2 {
+		padding: 3.2rem 1rem !important;
+	}
+
+	#title {
+		font-size: 14px;
+	}
+
+	#employee {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 870px) {
+	.profile-form {
+		min-width: 20rem;
+		margin-left: 0rem;
+	}
+	.sidebar-text {
+		display: none;
+	}
+	.account-menu-option h4 {
+		display: none;
+	}
+
+	#title {
+		font-size: 12px;
+	}
+
+	#employee {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 645px) {
+	.profile-form {
+		min-width: 20rem;
+		margin-left: 0rem;
+	}
+	.profile-form .col-1-2 {
+		padding: 3.2rem 0rem !important;
+	}
+
+	.sidebar {
+		padding: 0.5rem 3rem;
+	}
+}
+
+@media (max-width: 550px) {
+	.profile-form .col-1-2 {
+		margin: 0rem !important;
+	}
+	.sidebar {
+		padding: 0.5rem 1rem;
+	}
+
+	.profile-form .account__form {
+		padding: 0 1rem;
+	}
+	.profile-form {
+		min-width: 8rem;
+	}
+
+	.credit-card-compressed {
+		display: block;
+		/* column-gap: 2rem;
+		align-items: center;
+		padding: 0.5rem 0rem; */
+	}
+	.inline-buttons {
+		flex-direction: row;
+		column-gap: 8px;
+	}
+}

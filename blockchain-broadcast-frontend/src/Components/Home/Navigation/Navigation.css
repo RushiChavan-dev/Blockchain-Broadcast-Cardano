@@ -1,0 +1,127 @@
+.rounded-blue-btn {
+	margin-right: 20px;
+    background-color: var(--info-color); /* Using the blue color from the palette */
+    color: #FFFFFF; /* White text color for contrast */
+    border: none;
+    border-radius: 50px; /* Large border-radius for rounded edges */
+    padding: 10px 20px; /* Adequate padding for a comfortable button size */
+    font-size: 16px; /* Proper font size for readability */
+    font-weight: 600; /* Bold font weight for prominence */
+    cursor: pointer; /* Cursor to indicate clickability */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.rounded-blue-btn:hover {
+    background-color: #1457A1; /* A slightly darker blue for hover */
+    transform: scale(1.05); /* Slight enlargement for a subtle hover effect */
+}
+
+.rounded-blue-btn:active {
+    transform: scale(1); /* Reset to the original size when pressed */
+    background-color: #10467F; /* A much darker shade for an active state */
+}
+
+/* For the disabled state, assuming the <p> tag will use the same class */
+.rounded-blue-btn[disabled], 
+p.rounded-blue-btn {
+	text-size-adjust: 12;
+    background-color: var(--disabled-color); 
+    color: #FFF;
+    cursor: not-allowed; /* Indicate non-interactivity */
+}
+
+
+
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	/* padding: 0.5rem; */
+}
+.nav-top {
+	height: 30px;
+	left: 0;
+	padding: 26px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+	z-index: 1003;
+	overflow: visible;
+	background-color: var(--background-color);
+}
+
+.nav-left {
+	display: flex;
+	align-items: center;
+}
+
+.nav-right {
+	justify-content: center;
+	display: inline-flex !important;
+	align-items: center !important;
+}
+
+.header {
+	margin-left: 1rem;
+	color: var(--primary-color);
+}
+
+.inlineheader {
+	display: inline;
+}
+
+.nav-link {
+	align-items: center;
+	margin-right: 1.5rem;
+	cursor: pointer; /*Clickable property*/
+}
+
+.nav-link:hover {
+	border-bottom: 1px solid var(--primary-color);
+}
+.links {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.resize {
+	margin-left: 1rem;
+	width: 50px;
+	height: auto;
+}
+
+.logo {
+	/* font-size: 2.5rem !important; */
+	margin-left: 1rem;
+	/* width: auto; */
+}
+
+.text-logo {
+	height: 27px;
+	width: 171.767px;
+	height: 27px;
+	display: flex;
+	margin-left: 1rem;
+}
+
+.icon-logo {
+	display: none;
+	height: 34px;
+	width: 34px;
+	margin-left: 0.97rem;
+}
+
+@media (max-width: 760px) {
+	.inlineheader {
+		display: none;
+	}
+	.logo {
+		display: flex;
+	}
+	.text-logo {
+		display: none;
+	}
+}

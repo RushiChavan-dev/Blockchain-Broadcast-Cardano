@@ -1,0 +1,145 @@
+.my-left-aligned {
+	text-align: left;
+	margin-top: 5rem;
+	margin-left: 5rem;
+}
+.nav h2 {
+	font-weight: lighter;
+}
+.browser-screen {
+	margin-top: 5rem;
+	padding-bottom: 5rem;
+}
+.browser-buttons,
+.accordion_section_browser {
+	display: none;
+}
+.separated-inputs {
+	display: flex;
+}
+.browser-per-page-buttons {
+	column-gap: 0px !important;
+}
+.per-page-not-selected {
+	color: var(--disabled-color);
+	cursor: pointer;
+}
+.per-page-not-selected:hover {
+	color: var(--medium-dark-primary-color);
+}
+
+.per-page-selected {
+	font-weight: bold;
+}
+
+.my-left-aligned-books {
+	text-align: left;
+	margin-top: 1rem;
+	margin-left: 5rem;
+}
+
+.homescreen__products {
+	justify-content: space-between;
+	align-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	/* TODO: horizontal alignment of grid tracks */
+}
+.browser-nav {
+	margin: 2rem 0rem 1rem 0rem;
+}
+
+.browser-nav {
+	font-size: small;
+}
+
+.centered-footer {
+	font-weight: 600;
+	text-align: center;
+	font-size: small;
+}
+
+@media (max-width: 1040px) {
+	.homescreen__products {
+		grid-template-columns: repeat(4, auto);
+	}
+}
+
+@media (max-width: 900px) {
+	.nav h2 {
+		font-size: 12px;
+	}
+	.nav-total-items {
+		margin: 0px !important;
+	}
+	.browser-buttons {
+		display: flex;
+		column-gap: 7px;
+	}
+	.accordion_section_browser {
+		display: block !important;
+	}
+	.separated-inputs {
+		display: none;
+	}
+	.browser-nav {
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+		padding: 0% !important;
+	}
+
+	.book__rating {
+		font-size: 10px !important;
+	}
+}
+
+@media (max-width: 680px) {
+	.homescreen__products {
+		grid-template-columns: repeat(3, auto);
+	}
+}
+
+@media (max-width: 500px) {
+	.homescreen__products {
+		grid-template-columns: repeat(2, auto);
+	}
+}
+
+@media (max-width: 470px) {
+	.accordion_container_browser {
+		flex-wrap: wrap;
+		row-gap: 10px;
+	}
+}
+
+@media (max-width: 350px) {
+	.product img {
+		max-width: 130px;
+		min-width: 130px;
+		max-height: 200px;
+		min-height: 200px;
+	}
+	.product {
+		width: 130px;
+		padding: 0%;
+	}
+	.homescreen__products .book__rating {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 310px) {
+	.product img {
+		max-width: 110px;
+		min-width: 110px;
+		max-height: 170px;
+		min-height: 170px;
+	}
+	.product {
+		width: 110px;
+		padding: 0%;
+	}
+	.homescreen__products .book__rating {
+		display: none;
+	}
+}

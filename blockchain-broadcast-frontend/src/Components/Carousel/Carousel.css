@@ -1,0 +1,81 @@
+.carousel-container {
+	display: flex;
+	column-gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel {
+	overflow: hidden;
+}
+
+.inner {
+	white-space: nowrap;
+	transition: transform 0.3s;
+	align-content: center;
+	position: inherit;
+}
+
+.carousel-container-cart .inner {
+	max-width: 32rem !important;
+}
+
+.carousel-item {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: inherit;
+	overflow: visible;
+	padding: 0rem 0.5rem;
+}
+
+.indicator {
+	justify-content: center;
+	cursor: pointer;
+}
+
+.indicator:hover {
+	color: var(--dark-gray-color);
+}
+.carousel-container i[disabled] {
+	pointer-events: none;
+	color: var(--disabled-color);
+	pointer-events: none;
+}
+
+.indicator i[disabled] {
+	pointer-events: none;
+	color: var(--disabled-color);
+}
+
+@media (max-width: 1550px) {
+	.auto-scroll {
+		margin-top: 11rem;
+		position: absolute;
+	}
+	.half-scroll {
+		float: left;
+		width: 50%;
+		position: relative;
+	}
+
+	.auto-scroll-inner {
+		display: block;
+		width: 200%;
+		position: relative;
+		animation: auto-scroll 30s linear infinite;
+	}
+
+	.auto-scroll-inner:hover {
+		animation-play-state: paused;
+	}
+
+	@keyframes auto-scroll {
+		0% {
+			left: 0;
+		}
+		100% {
+			left: -100%;
+		}
+	}
+}

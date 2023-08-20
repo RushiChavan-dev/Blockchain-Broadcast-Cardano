@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #5D737E;  /* A deeper, neutral primary color */
+    --medium-dark-primary-color: #3F515B; /* Darkened for better contrast */
+    --darker-primary-color: #28303B; /* Even more depth, for elements that need to stand out */
+    --warm-color: #E5EAEF; /* A softer warm color, not too aggressive */
+    --secondary-color: #BFC5D2; /* Subtle secondary color, complements primary */
+    --tertiary-color: #1A2027; /* Almost black, for text and tertiary elements */
+    --info-color: #1A73E8; /* Kept this as it's a pleasing shade of blue */
+    --success-color: #34A853; /* Green, associated with success, slightly modified */
+    --danger-color: #EA4335; /* Red, associated with alerts or danger */
+    --light-color: #F4F4F6; /* A very soft light color, not pure white to reduce glare */
+    --background-color: #FFFFFF; /* Pure white background for cleanliness */
+    --yellow-color: #F7BD36; /* Brighter yellow for attention */
+    --dark-color: #2F3D48; /* Soft dark color, not as aggressive as black */
+    --gray-color: #848FA5; /* Neutral gray */
+    --dark-gray-color: #626D7A; /* A darker gray for subtler texts/elements */
+    --light-gray-color: #D1D6E0; /* Light gray, for backgrounds or to offset other elements */
+    --border-color: #DCE2EA; /* Soft border color, not too stark */
+    --disabled-color: #B0B7C3; /* Grayed out for disabled elements */
+    --new-color: #6D888E99; /* A blend of the primary, but with opacity for overlays */
+    --router-link-color: #414B58; /* Neutral for router links */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100vh;
+	margin: 0;
+	color: var(--tertiary-color);
+	line-height: 1.6;
+	font-family: 'Open Sans', sans-serif;
+	background: var(--background-color);
+}
+
+#root {
+	height: 100vh;
+}
+
+a, .Router_Link {
+	text-decoration: none;
+	color: var(--tertiary-color);
+}
+
+.Router_Link {
+	align-items: center;
+	display: flex;
+	column-gap: 3px;
+}
+
+.blur {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 4;
+	background: rgba(255, 255, 255, 0.094);
+	backdrop-filter: blur(2px);
+}
+
+.centered_header {
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+	margin: 2rem;
+}
+
+.screen {
+	margin-top: 4rem;
+}
+
+.screen-h-padding {
+	margin-left: 8rem;
+	margin-right: 8rem;
+}
+
+.screen i {
+	transition: color 0.3s ease;
+}
+
+.screen i:hover {
+	color: var(--dark-gray-color);
+	cursor: pointer;
+}
+
+.screen i[disabled] {
+	pointer-events: none;
+	color: var(--disabled-color);
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #ccc;
+	background-color: #ddd;
+	height: 1px;
+}
+
+.customer_container {
+	width: 100%;
+	margin-top: 3rem;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.btn {
+	font-family: 'Open Sans', sans-serif;
+	min-width: 6.5rem;
+	font-weight: 700;
+	font-size: 0.8rem;
+	transition: all 0.3s ease-out;
+	border: none;
+	cursor: pointer;
+	outline-width: 0;
+	text-align: center;
+	padding: 5px;
+}
+
+.btn-primary, .btn-light, .btn-dark {
+	border-radius: 0;
+}
+
+.btn-primary:hover, .btn-light:hover, .btn-dark:hover {
+	transform: scale(1.05);
+}
+
+/* ... more btn styles ... */
+
+.rec-arrow {
+	background-color: rgba(var(--tertiary-color), 0.5) !important;
+}
+
+.rec-dot_active {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	box-shadow: 0 0 1px 3px var(--tertiary-color) !important;
+}
+
+.cart_summary {
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	height: 250px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.dashboard-divider {
+	display: flex;
+	margin-top: 3rem;
+}
+
+@media (max-width: 1250px) {
+	.screen-h-padding {
+		margin-left: 5rem;
+		margin-right: 5rem;
+	}
+}
+
+@media (max-width: 1150px) {
+	.screen-h-padding {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+}
+
+@media (max-width: 1070px) {
+	.screen-h-padding {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
