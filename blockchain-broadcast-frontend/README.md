@@ -1,25 +1,15 @@
 # Blockchain Broadcast
 
-Blockchain Broadcast is an online web application bookstore built using the MERN stack.
+Blockchain Broadcast is an online Dapp application bookstore built using the MERN stack and Cardano.
 
-This is the frontend for the Blockchain Broadcast web app developed as a group project for our Spring 2021 CEN 4010 Software Engineering course.
-
-Visit [geektext.netlify.app](https://geektext.netlify.app/) to see it live.
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/667ba2ae-ce77-4c66-9c01-b0c2200f040a/deploy-status)](https://app.netlify.com/sites/geek-text-333/deploys)
-
-<img alt="demo" src="demo.gif" height="auto"/>
+This is the frontend for the Blockchain Broadcast Dapp developed as a group project for our Summer 2023 T475 Blockchain Developement course.
 
 ## Development Team
-
 Below are the developers of this project and their assigned features.
+- [Rutuja Dalvi](https://www.linkedin.com/in/rutuja-dalvi-developer/)
 
-- [Andrew Andersen](https://github.com/pandamon99) (Book Browsing and Sorting)
-- [Azhar Ali](https://github.com/azhareus) (Book Rating and Commenting)
-- [Celeste Amengual](https://github.com/celesteamen) (Wishlist Management)
-- [Jonathan Attias Khoudari](https://github.com/jattias96) (Book Details)
-- [Leanet Alfonso Azcona](https://github.com/leanetalfonso) (Shopping Cart)
-- [William Aranzabal](https://github.com/cab-aranw) (Profile Management)
+
+
 
 ## Features
 
@@ -38,18 +28,18 @@ node v16.10 (some later versions of node do not work with netlify dev)
 
 ## Running Locally
 
-First, make sure the backend is already running locally and a server connection has been established successfully. For instructions on how to run the backend locally please go to [geek-text-backend](https://github.com/LeanetAlfonso/geek-text-backend).
+First, make sure the backend is already running locally and a server connection has been established successfully. For instructions on how to run the backend locally please go to [blockchain-broadcast-backend](https://github.com/Rushi/blockchain-broadcast-backend).
 
 Clone the repo
 
 ```
-git clone https://github.com/LeanetAlfonso/geek-text-frontend.git
+git clone https://github.com/Rushi/blockchain-broadcast-frontend.git
 ```
 
 Change directory
 
 ```
-cd geek-text-frontend
+cd blockchain-broadcast-frontend
 ```
 
 Install dependencies
